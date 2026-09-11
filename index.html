@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SKS Academy nurtures responsive individuals through quality teaching, personal guidance, and strong academic foundations." />
+    <title>SKS Academy | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">SKS</span>
+          <span class="brand-text">Academy</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Nurturing confident learners</p>
+          <h1>Building responsive individuals through education.</h1>
+          <p class="hero-copy">
+            SKS Academy helps students grow academically, socially, and personally with an encouraging environment, strong values, and expert mentoring.
+          </p>
+          <div class="cta-row">
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+            <a href="services.html" class="btn btn-secondary">Explore Subjects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro container section-pad">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">Why SKS Academy</p>
+          <h2>Thoughtful guidance for every learner.</h2>
+        </div>
+        <div class="intro-grid">
+          <div class="info-card">
+            <span class="card-number">01</span>
+            <h3>Personal Attention</h3>
+            <p>We focus on each learner’s pace, strengths, and challenges with patient, supportive guidance.</p>
+          </div>
+          <div class="info-card">
+            <span class="card-number">02</span>
+            <h3>Strong Foundations</h3>
+            <p>Our approach emphasizes conceptual clarity, disciplined learning, and confident academic growth.</p>
+          </div>
+          <div class="info-card">
+            <span class="card-number">03</span>
+            <h3>Holistic Development</h3>
+            <p>Alongside academics, we help students build values, communication, resilience, and responsible thinking.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-band">
+        <div class="container feature-grid">
+          <div>
+            <p class="eyebrow">Our learning approach</p>
+            <h2>Education that inspires curiosity and confidence.</h2>
+          </div>
+          <p>
+            At SKS Academy, teaching is not only about marks but about developing independent thinking, response to real-world challenges, and a lifelong love for learning.
+          </p>
+        </div>
+      </section>
+
+      <section class="subjects container section-pad">
+        <div class="section-heading center">
+          <p class="eyebrow eyebrow-dark">Core subjects</p>
+          <h2>Academic excellence with meaningful learning.</h2>
+        </div>
+        <div class="subject-grid">
+          <article class="subject-card">
+            <span class="subject-number">01</span>
+            <h3>Mathematics</h3>
+            <p>Students understand mathematical ideas through step-by-step reasoning, practice, and real-life application.</p>
+          </article>
+          <article class="subject-card">
+            <span class="subject-number">02</span>
+            <h3>Science</h3>
+            <p>We turn scientific concepts into engaging learning experiences by connecting observation, inquiry, and explanation.</p>
+          </article>
+          <article class="subject-card">
+            <span class="subject-number">03</span>
+            <h3>English</h3>
+            <p>Communication, writing, and comprehension are nurtured to help students express ideas clearly and confidently.</p>
+          </article>
+          <article class="subject-card">
+            <span class="subject-number">04</span>
+            <h3>Social Studies</h3>
+            <p>Students learn civic awareness, society, culture, and history in a way that connects to life and responsibility.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-section" id="contact">
+        <div class="container cta-block">
+          <div>
+            <p class="eyebrow">Begin the journey</p>
+            <h2>Give your child the guidance to grow with confidence.</h2>
+          </div>
+          <button type="button" class="btn btn-primary" id="open-contact-form">Contact SKS Academy</button>
+        </div>
+      </section>
+
+      <div class="contact-modal hidden" id="contact-modal" aria-hidden="true">
+        <div class="contact-modal-backdrop" data-close="true"></div>
+        <div class="contact-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-form-title">
+          <button type="button" class="modal-close" id="close-contact-form" aria-label="Close contact form">×</button>
+          <h3 id="contact-form-title">Enquire at SKS Academy</h3>
+          <form id="inquiry-form" action="https://formspree.io/f/your_form_id" method="POST">
+            <div class="form-grid">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your full name" required />
+              </label>
+              <label>
+                <span>Contact Number</span>
+                <input type="tel" name="contact" placeholder="Your contact number" required />
+              </label>
+              <label class="full-width">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Your email address" required />
+              </label>
+              <label class="full-width">
+                <span>How can we help?</span>
+                <textarea name="description" rows="5" placeholder="Describe your requirement" required></textarea>
+              </label>
+              <input type="hidden" name="_subject" value="New inquiry from SKS Academy website" />
+            </div>
+            <button type="submit" class="btn btn-primary full-width-btn">Send</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>SKS Academy</h3>
+          <p>Building thoughtful learners and responsible individuals.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919952899339">+91-99528 99339</a></li>
+            <li><a href="mailto:sdrkhandiur@gmail.com">sdrkhandiur@gmail.com</a></li>
+            <li>2H/1007, Kathirvel Nagar West, SBM Nagar, Muthukrishna Nagar, Thoothukudi, Tamil Nadu - 628008</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 SKS Academy. All rights reserved.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
